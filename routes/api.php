@@ -6,6 +6,7 @@ use App\Http\Controllers\Authentication\RegisterController;
 use App\Http\Controllers\Authentication\ResetPasswordController;
 use App\Http\Controllers\Authentication\VerifyEmailController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\FieldController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,10 +39,10 @@ use Illuminate\Support\Facades\Route;
 
 // Public routes
 Route::get('/cities', [CityController::class, 'index']);
+Route::get('/cities/fields/{city_id}', [FieldController::class, 'index']);
+Route::get('/fields/{field_id}', [FieldController::class, 'show']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
 // Route::get('/games/{game_id}', [GameController::class, 'show']);
 // Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
 // Route::get('/championships/{championship_id}', [ChampionshipController::class, 'show']);
-// Route::get('/cities/stadia/{city_id}', [StadiumController::class, 'index']);
-// Route::get('/stadia/{stadium_id}', [StadiumController::class, 'show']);
 // Route::get('/users/{user_id}', [UserController::class, 'show']);
