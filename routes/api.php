@@ -5,6 +5,7 @@ use App\Http\Controllers\Authentication\LogoutController;
 use App\Http\Controllers\Authentication\RegisterController;
 use App\Http\Controllers\Authentication\ResetPasswordController;
 use App\Http\Controllers\Authentication\VerifyEmailController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\FieldController;
@@ -30,13 +31,21 @@ use Illuminate\Support\Facades\Route;
 //         Route::post('/reset', 'reset')->name('password.update');
 //     });
 
-// //User routes
-// Route::middleware('auth:sanctum')
-//     ->group(function () {
-//         Route::post('/logout', LogoutController::class);
-//         Route::patch('/users/{user}/avatar', [UserController::class, 'uploadAvatar']);
-//         Route::apiResource('users', UserController::class);
-//     });
+//User routes
+Route::middleware('auth:sanctum')
+  ->group(function () {
+    // Route::post('/logout', LogoutController::class);
+    // Route::patch('/users/{user}/avatar', [UserController::class, 'uploadAvatar']);
+    // Route::apiResource('users', UserController::class);
+    Route::get(
+      '/users/{user_id}/bookings',
+      [BookingController::class, 'index']
+    );
+    Route::get(
+      '/bookings/{booking_id}',
+      [BookingController::class, 'show']
+    );
+  });
 
 
 // Public routes
