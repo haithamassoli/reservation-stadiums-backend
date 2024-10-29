@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\FieldSize;
+use App\Models\FieldTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class FieldSizeController extends Controller
+class FieldTimeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index($fieldId)
     {
-        $fieldSize = DB::table('field_sizes')->where('field_id', $fieldId)->get();
-        return response()->json($fieldSize);
+        $fieldTimes = DB::table('field_times')->where('field_id', $fieldId)->get();
+        return response()->json($fieldTimes);
     }
 
     /**
@@ -28,7 +28,7 @@ class FieldSizeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, FieldSize $fieldSize)
+    public function update(Request $request, FieldTime $fieldTime)
     {
         //
     }
@@ -36,7 +36,7 @@ class FieldSizeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(FieldSize $fieldSize)
+    public function destroy(FieldTime $fieldTime)
     {
         //
     }

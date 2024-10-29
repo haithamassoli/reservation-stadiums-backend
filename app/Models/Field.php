@@ -40,4 +40,9 @@ class Field extends Model
     {
         return $this->hasMany(FieldSize::class);
     }
+
+    public function fieldTimes()
+    {
+        return $this->hasMany(FieldTime::class);
+    }
 }

@@ -10,6 +10,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\FieldController;
 use App\Http\Controllers\FieldSizeController;
+use App\Http\Controllers\FieldTimeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -53,7 +54,8 @@ Route::get('/cities', [CityController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/fields/{city_id}', [FieldController::class, 'index']);
 Route::get('/fields/{field_id}', [FieldController::class, 'show']);
-Route::get('/fields/sizes/{field_id}', [FieldSizeController::class, 'show']);
+Route::get('/fields/sizes/{field_id}', [FieldSizeController::class, 'index']);
+Route::get('/fields/times/{field_id}', [FieldTimeController::class, 'index']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
 // Route::get('/games/{game_id}', [GameController::class, 'show']);
 // Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
