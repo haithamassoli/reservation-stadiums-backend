@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             FieldSeeder::class,
             FieldSizeSeeder::class,
             BookingSeeder::class,
+            DiscountCodeSeeder::class,
         ]);
 
         // User::factory()->create([
