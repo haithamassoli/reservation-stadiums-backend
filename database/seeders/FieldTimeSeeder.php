@@ -15,6 +15,8 @@ class FieldTimeSeeder extends Seeder
         FieldTime::create([
             'field_id' => 1,
             'time' => 'ساعة',
+            'discount' => 10,
+            'expires_at' => now()->addDays(7),
         ]);
         FieldTime::create([
             'field_id' => 1,

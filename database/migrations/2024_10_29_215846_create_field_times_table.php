@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('field_times', function (Blueprint $table) {
             $table->id();
             $table->foreignId('field_id')->constrained()->cascadeOnDelete();
+            $table->integer('discount')->nullable();
+            $table->dateTime('expires_at')->nullable();
+            $table->enum('discount_type', ['percentage', 'fixed'])->default('percentage');
             $table->string('time');
             $table->timestamps();
         });

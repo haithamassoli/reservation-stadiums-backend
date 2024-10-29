@@ -6,7 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class FieldSize extends Model
 {
-    protected $fillable = ['size', 'field_id', 'price_per_hour'];
+    protected $fillable = [
+        'size',
+        'field_id',
+        'price_per_hour',
+        'discount',
+        'expires_at',
+        'discount_type',
+    ];
 
     public function field()
     {

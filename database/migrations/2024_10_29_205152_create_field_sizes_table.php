@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('size');
             $table->decimal('price_per_hour', 5, 2);
+            $table->integer('discount')->nullable();
+            $table->dateTime('expires_at')->nullable();
+            $table->enum('discount_type', ['percentage', 'fixed'])->default('percentage');
             $table->foreignId('field_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
