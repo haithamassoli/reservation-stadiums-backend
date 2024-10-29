@@ -16,7 +16,6 @@ class Field extends Model
         "rating",
         'images',
         'discount',
-        'discount_description',
         'min_price',
         'status',
     ];

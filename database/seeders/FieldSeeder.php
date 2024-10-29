@@ -22,7 +22,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -36,7 +35,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -50,7 +48,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -64,7 +61,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -78,7 +74,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -92,7 +87,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -106,7 +100,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -120,7 +113,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -134,7 +126,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -148,7 +139,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -162,7 +152,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -176,7 +165,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -190,7 +178,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -204,7 +191,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -218,7 +204,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -232,7 +217,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -246,7 +230,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -260,7 +243,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -274,7 +256,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -288,7 +269,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -302,7 +282,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -316,7 +295,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -330,7 +308,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -344,7 +321,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);
@@ -358,7 +334,6 @@ class FieldSeeder extends Seeder
             'terms' => 'يجب إظهار الكود عند الطلب. صالح حتى نهاية الشهر.',
             'rating' => 4.5,
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
-            'discount_description' => 'احصل على خصم 20% على جميع المشروبات.',
             'min_price' => 50,
             'status' => 'active',
         ]);

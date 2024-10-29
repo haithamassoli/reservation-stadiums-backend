@@ -23,7 +23,6 @@ return new class extends Migration
             $table->text('terms');
             $table->float('rating')->default(0);
             $table->json('images');
-            $table->text('discount_description')->nullable();
             $table->integer('min_price')->default(0);
             $table->enum('status', ['active', 'inactive'])->default('active');
         });
