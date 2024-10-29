@@ -5,6 +5,7 @@ use App\Http\Controllers\Authentication\LogoutController;
 use App\Http\Controllers\Authentication\RegisterController;
 use App\Http\Controllers\Authentication\ResetPasswordController;
 use App\Http\Controllers\Authentication\VerifyEmailController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\FieldController;
 use App\Http\Controllers\UserController;
@@ -39,6 +40,7 @@ use Illuminate\Support\Facades\Route;
 
 // Public routes
 Route::get('/cities', [CityController::class, 'index']);
+Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/fields/{city_id}', [FieldController::class, 'index']);
 Route::get('/fields/{field_id}', [FieldController::class, 'show']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
