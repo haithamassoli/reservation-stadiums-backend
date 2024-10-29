@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\Authentication\LoginController;
 use App\Http\Controllers\Authentication\LogoutController;
 use App\Http\Controllers\Authentication\RegisterController;
@@ -56,6 +57,7 @@ Route::get('/cities/fields/{city_id}', [FieldController::class, 'index']);
 Route::get('/fields/{field_id}', [FieldController::class, 'show']);
 Route::get('/fields/sizes/{field_id}', [FieldSizeController::class, 'index']);
 Route::get('/fields/times/{field_id}', [FieldTimeController::class, 'index']);
+Route::get('/advertisements', [AdvertisementController::class, 'index']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
 // Route::get('/games/{game_id}', [GameController::class, 'show']);
 // Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
