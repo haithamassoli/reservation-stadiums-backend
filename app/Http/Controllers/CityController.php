@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\City;
+use Illuminate\Support\Facades\DB;
 
 class CityController extends Controller
 {
@@ -13,7 +13,7 @@ class CityController extends Controller
    */
   public function index()
   {
-    $cities = City::all();
+    $cities = DB::table('cities')->get();
     return response()->json($cities);
   }
 }

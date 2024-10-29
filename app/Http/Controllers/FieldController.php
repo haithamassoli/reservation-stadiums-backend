@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Field;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FieldController extends Controller
 {
@@ -12,7 +13,7 @@ class FieldController extends Controller
      */
     public function index($cityId)
     {
-        $field = Field::where('city_id', $cityId)->simplePaginate(10);
+        $field = DB::table('fields')->where('city_id', $cityId)->simplePaginate(10);
         return response()->json($field);
     }
 
@@ -29,7 +30,7 @@ class FieldController extends Controller
      */
     public function show($fieldId)
     {
-        $field = Field::findOrFail($fieldId);
+        $field = DB::table('fields')->where('id', $fieldId)->first();
         return response()->json($field);
     }
 
