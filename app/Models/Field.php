@@ -35,4 +35,9 @@ class Field extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function fieldSizes()
+    {
+        return $this->hasMany(FieldSize::class);
+    }
 }
