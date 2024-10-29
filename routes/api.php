@@ -1,14 +1,47 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Authentication\LoginController;
+use App\Http\Controllers\Authentication\LogoutController;
+use App\Http\Controllers\Authentication\RegisterController;
+use App\Http\Controllers\Authentication\ResetPasswordController;
+use App\Http\Controllers\Authentication\VerifyEmailController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+//Authentication routes
+// Route::post('/login', LoginController::class);
+// Route::post('/register', RegisterController::class);
 
-Route::get('/hi', function (Request $request) {
-    return response()->json(['message' => 'Hello World!']);
-});
+// Route::prefix('email')
+//     ->controller(VerifyEmailController::class)
+//     ->group(function () {
+//         Route::post('/verification-notification', 'notify');
+//         Route::get('/verify/{id}/{hash}', 'verify')->name('verification.verify');
+//     });
 
-// Route::post('/login', 'App\Http\Controllers\AuthController@login');
+// Route::prefix('password')
+//     ->controller(ResetPasswordController::class)
+//     ->group(function () {
+//         Route::post('/reset-notification', 'notify');
+//         Route::post('/reset', 'reset')->name('password.update');
+//     });
+
+// //User routes
+// Route::middleware('auth:sanctum')
+//     ->group(function () {
+//         Route::post('/logout', LogoutController::class);
+//         Route::patch('/users/{user}/avatar', [UserController::class, 'uploadAvatar']);
+//         Route::apiResource('users', UserController::class);
+//     });
+
+
+// Public routes
+Route::get('/cities', [CityController::class, 'index']);
+// Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
+// Route::get('/games/{game_id}', [GameController::class, 'show']);
+// Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
+// Route::get('/championships/{championship_id}', [ChampionshipController::class, 'show']);
+// Route::get('/cities/stadia/{city_id}', [StadiumController::class, 'index']);
+// Route::get('/stadia/{stadium_id}', [StadiumController::class, 'show']);
+// Route::get('/users/{user_id}', [UserController::class, 'show']);
