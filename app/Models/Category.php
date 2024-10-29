@@ -11,4 +11,9 @@ class Category extends Model
     ];
 
     public $timestamps = false;
+
+    public function fields()
+    {
+        return $this->belongsToMany(Field::class);
+    }
 }

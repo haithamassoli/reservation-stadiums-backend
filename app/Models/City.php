@@ -14,4 +14,9 @@ class City extends Model
   ];
 
   public $timestamps = false;
+
+  public function fields()
+  {
+    return $this->hasMany(Field::class);
+  }
 }
