@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('field_sizes', function (Blueprint $table) {
             $table->id();
             $table->string('size');
-            $table->decimal('price_per_hour', 8, 2);
+            $table->decimal('price_per_hour', 5, 2);
             $table->foreignId('field_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
