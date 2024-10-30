@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('discount')->nullable();
             $table->dateTime('expires_at')->nullable();
             $table->enum('discount_type', ['percentage', 'fixed'])->default('percentage');
-            $table->foreignId('field_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_field_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

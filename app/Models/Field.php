@@ -41,11 +41,6 @@ class Field extends Model
         return $this->hasMany(FieldSize::class);
     }
 
-    public function fieldTimes()
-    {
-        return $this->hasMany(FieldTime::class);
-    }
-
     public function reviews()
     {
         return $this->hasMany(Review::class);
