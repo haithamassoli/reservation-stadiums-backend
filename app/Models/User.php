@@ -42,6 +42,16 @@ class User extends Authenticatable
         return $this->hasMany(Booking::class);
     }
 
+    public function tournaments()
+    {
+        return $this->hasMany(Tournament::class);
+    }
+
+    public function fields()
+    {
+        return $this->hasOne(Field::class);
+    }
+
     /**
      * Get the attributes that should be cast.
      *

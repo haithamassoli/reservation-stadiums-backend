@@ -19,4 +19,9 @@ class City extends Model
   {
     return $this->hasMany(Field::class);
   }
+
+  public function tournaments()
+  {
+    return $this->hasMany(Tournament::class);
+  }
 }

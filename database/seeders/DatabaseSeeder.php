@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             DiscountCodeSeeder::class,
             FieldTimeSeeder::class,
             AdvertisementSeeder::class,
+            TournamentSeeder::class,
         ]);
 
         // User::factory()->create([
