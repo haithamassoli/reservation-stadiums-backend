@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             FieldTimeSeeder::class,
             AdvertisementSeeder::class,
             TournamentSeeder::class,
+            ReviewSeeder::class,
         ]);
 
         // User::factory()->create([

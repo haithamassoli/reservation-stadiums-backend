@@ -44,4 +44,9 @@ class Field extends Model
     {
         return $this->hasMany(FieldTime::class);
     }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }
