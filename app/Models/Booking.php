@@ -27,11 +27,6 @@ class Booking extends Model
         return $this->belongsTo(FieldSize::class);
     }
 
-    public function field()
-    {
-        return $this->belongsTo(Field::class);
-    }
-
     public function user()
     {
         return $this->belongsTo(User::class);

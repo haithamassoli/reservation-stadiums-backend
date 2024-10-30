@@ -20,6 +20,11 @@ class FieldSize extends Model
         return $this->belongsTo(Field::class);
     }
 
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     public function bookings()
     {
         return $this->hasMany(Booking::class);
