@@ -11,9 +11,9 @@ class TournamentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($cityId)
+    public function index($city_id)
     {
-        $tournaments = DB::table('tournaments')->where('city_id', $cityId)->simplePaginate(10);
+        $tournaments = DB::table('tournaments')->where('city_id', $city_id)->simplePaginate(10);
         return response()->json($tournaments);
     }
 
@@ -28,9 +28,9 @@ class TournamentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($tournamentId)
+    public function show($tournament_id)
     {
-        $tournament = DB::table('tournaments')->where('id', $tournamentId)->first();
+        $tournament = DB::table('tournaments')->where('id', $tournament_id)->first();
         return response()->json($tournament);
     }
 

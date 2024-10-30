@@ -11,9 +11,9 @@ class FieldTimeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($fieldId)
+    public function index($field_id)
     {
-        $fieldTimes = DB::table('field_times')->where('field_id', $fieldId)->get();
+        $fieldTimes = DB::table('field_times')->where('field_id', $field_id)->get();
         return response()->json($fieldTimes);
     }
 

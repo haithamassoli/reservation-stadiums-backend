@@ -11,9 +11,9 @@ class BookingController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($userId)
+    public function index($user_id)
     {
-        $bookings = DB::table('bookings')->where('user_id', $userId)->get();
+        $bookings = DB::table('bookings')->where('user_id', $user_id)->get();
         return response()->json($bookings);
     }
 
@@ -28,9 +28,9 @@ class BookingController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($BookingId)
+    public function show($booking_id)
     {
-        $booking = DB::table('bookings')->where('id', $BookingId)->first();
+        $booking = DB::table('bookings')->where('id', $booking_id)->first();
         return response()->json($booking);
     }
 

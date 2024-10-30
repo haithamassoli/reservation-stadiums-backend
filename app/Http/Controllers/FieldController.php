@@ -11,9 +11,9 @@ class FieldController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($cityId)
+    public function index($city_id)
     {
-        $field = DB::table('fields')->where('city_id', $cityId)->simplePaginate(10);
+        $field = DB::table('fields')->where('city_id', $city_id)->simplePaginate(10);
         return response()->json($field);
     }
 
@@ -28,9 +28,9 @@ class FieldController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($fieldId)
+    public function show($field_id)
     {
-        $field = DB::table('fields')->where('id', $fieldId)->first();
+        $field = DB::table('fields')->where('id', $field_id)->first();
         return response()->json($field);
     }
 

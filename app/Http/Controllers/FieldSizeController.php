@@ -11,9 +11,9 @@ class FieldSizeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($fieldId)
+    public function index($field_id)
     {
-        $fieldSize = DB::table('field_sizes')->where('field_id', $fieldId)->get();
+        $fieldSize = DB::table('field_sizes')->where('field_id', $field_id)->get();
         return response()->json($fieldSize);
     }
 
