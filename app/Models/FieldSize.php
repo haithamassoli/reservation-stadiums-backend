@@ -8,7 +8,7 @@ class FieldSize extends Model
 {
     protected $fillable = [
         'size',
-        'field_id',
+        'category_field_id',
         'price_per_hour',
         'discount',
         'expires_at',
