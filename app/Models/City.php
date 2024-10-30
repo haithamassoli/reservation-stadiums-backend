@@ -24,4 +24,9 @@ class City extends Model
   {
     return $this->hasMany(Tournament::class);
   }
+
+  public function academies()
+  {
+    return $this->hasMany(Academy::class);
+  }
 }

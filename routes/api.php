@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\Authentication\LoginController;
 use App\Http\Controllers\Authentication\LogoutController;
@@ -63,6 +64,8 @@ Route::get('/advertisements', [AdvertisementController::class, 'index']);
 Route::get('/cities/tournaments/{city_id}', [TournamentController::class, 'index']);
 Route::get('/tournaments/{tournament_id}', [TournamentController::class, 'show']);
 Route::get('/reviews/{field_id}', [ReviewController::class, 'index']);
+Route::get('/cities/academies/{city_id}', [AcademyController::class, 'index']);
+Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
 // Route::get('/games/{game_id}', [GameController::class, 'show']);
 // Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
