@@ -17,14 +17,13 @@ return new class extends Migration
             $table->string('description');
             $table->string('period');
             $table->enum('status', ['active', 'inactive'])->default('active');
-            $table->string('image')->nullable();
+            $table->json('images');
             $table->string('phone');
             $table->string('category');
             $table->string('age');
             $table->dateTime('expire_at');
             $table->string('address');
             $table->string('location');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('city_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

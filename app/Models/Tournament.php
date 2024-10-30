@@ -11,21 +11,15 @@ class Tournament extends Model
         'description',
         'period',
         'status',
-        'image',
+        'images',
         'phone',
         'category',
         'age',
         'expire_at',
         'address',
         'location',
-        'user_id',
         'city_id',
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 
     public function city()
     {
