@@ -24,6 +24,7 @@ class FieldSeeder extends Seeder
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
             'min_price' => 50,
             'status' => 'active',
+            'order' => 1,
         ]);
         Field::create([
             'user_id' => 1,
@@ -50,6 +51,7 @@ class FieldSeeder extends Seeder
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
             'min_price' => 50,
             'status' => 'active',
+            'order' => 10,
         ]);
         Field::create([
             'user_id' => 1,
@@ -63,6 +65,7 @@ class FieldSeeder extends Seeder
             'images' => json_encode(['https://cdne-totv8-prod.azureedge.net/media/34057/the-stadium.jpg', 'https://wtpartnership.com.au/wp-content/uploads/2022/09/allianz-stadium-2022aug-2.jpg', 'https://img.freepik.com/premium-photo/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-361.jpg?w=2000']),
             'min_price' => 50,
             'status' => 'active',
+            'order' => 20,
         ]);
         Field::create([
             'user_id' => 1,

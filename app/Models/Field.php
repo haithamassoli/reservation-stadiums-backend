@@ -18,6 +18,7 @@ class Field extends Model
         'discount',
         'min_price',
         'status',
+        'order',
     ];
 
     public function city()
