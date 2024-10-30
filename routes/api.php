@@ -14,6 +14,7 @@ use App\Http\Controllers\FieldController;
 use App\Http\Controllers\FieldSizeController;
 use App\Http\Controllers\FieldTimeController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\SeekController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -66,6 +67,8 @@ Route::get('/tournaments/{tournament_id}', [TournamentController::class, 'show']
 Route::get('/reviews/{field_id}', [ReviewController::class, 'index']);
 Route::get('/cities/academies/{city_id}', [AcademyController::class, 'index']);
 Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
+Route::get('/cities/seeks/{city_id}', [SeekController::class, 'index']);
+Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
 // Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
 // Route::get('/games/{game_id}', [GameController::class, 'show']);
 // Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);

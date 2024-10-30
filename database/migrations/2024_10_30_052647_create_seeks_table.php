@@ -11,13 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('field_times', function (Blueprint $table) {
+        Schema::create('seeks', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('city_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('field_id')->constrained()->onDelete('cascade');
-            $table->integer('discount')->nullable();
-            $table->dateTime('expires_at')->nullable();
-            $table->enum('discount_type', ['percentage', 'fixed'])->default('percentage');
-            $table->string('time');
+            $table->string('title');
+            $table->text('description');
+            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->timestamp('expires_at')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('field_times');
+        Schema::dropIfExists('seeks');
     }
 };

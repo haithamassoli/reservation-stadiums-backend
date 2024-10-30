@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             TournamentSeeder::class,
             ReviewSeeder::class,
             AcademySeeder::class,
+            SeekSeeder::class,
         ]);
 
         // User::factory()->create([

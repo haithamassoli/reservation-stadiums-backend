@@ -52,6 +52,11 @@ class User extends Authenticatable
         return $this->hasMany(Review::class);
     }
 
+    public function seeks()
+    {
+        return $this->hasMany(Seek::class);
+    }
+
     /**
      * Get the attributes that should be cast.
      *
