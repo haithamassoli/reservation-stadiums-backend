@@ -42,14 +42,9 @@ Route::middleware('auth:sanctum')
     // Route::post('/logout', LogoutController::class);
     // Route::patch('/users/{user}/avatar', [UserController::class, 'uploadAvatar']);
     // Route::apiResource('users', UserController::class);
-    Route::get(
-      '/users/{user_id}/bookings',
-      [BookingController::class, 'index']
-    );
-    Route::get(
-      '/bookings/{booking_id}',
-      [BookingController::class, 'show']
-    );
+    Route::get('/fields/{field_id}/bookings', [BookingController::class, 'fieldBookings']);
+    Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
+    Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
   });
 
 

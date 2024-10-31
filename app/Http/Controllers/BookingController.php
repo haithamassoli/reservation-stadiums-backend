@@ -17,6 +17,13 @@ class BookingController extends Controller
         return response()->json($bookings);
     }
 
+    // all field_id bookings
+    public function fieldBookings($field_id)
+    {
+        $bookings = DB::table('bookings')->where('field_id', $field_id)->get();
+        return response()->json($bookings);
+    }
+
     /**
      * Store a newly created resource in storage.
      */
