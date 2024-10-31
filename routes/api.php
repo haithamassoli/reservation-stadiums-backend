@@ -2,11 +2,7 @@
 
 use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\AdvertisementController;
-use App\Http\Controllers\Authentication\LoginController;
-use App\Http\Controllers\Authentication\LogoutController;
-use App\Http\Controllers\Authentication\RegisterController;
-use App\Http\Controllers\Authentication\ResetPasswordController;
-use App\Http\Controllers\Authentication\VerifyEmailController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AvailabilityController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CategoryController;
@@ -16,12 +12,11 @@ use App\Http\Controllers\FieldSizeController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SeekController;
 use App\Http\Controllers\TournamentController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 //Authentication routes
-// Route::post('/login', LoginController::class);
-// Route::post('/register', RegisterController::class);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/register', [AuthController::class, 'register']);
 
 // Route::prefix('email')
 //     ->controller(VerifyEmailController::class)
@@ -40,9 +35,7 @@ use Illuminate\Support\Facades\Route;
 //User routes
 Route::middleware('auth:sanctum')
   ->group(function () {
-    // Route::post('/logout', LogoutController::class);
-    // Route::patch('/users/{user}/avatar', [UserController::class, 'uploadAvatar']);
-    // Route::apiResource('users', UserController::class);
+    Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/fields/{field_id}/bookings', [BookingController::class, 'fieldBookings']);
     Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
     Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
@@ -50,6 +43,7 @@ Route::middleware('auth:sanctum')
 
 
 // Public routes
+Route::get('/not-authenticated', [AuthController::class, 'notAuthenticated'])->name('login');
 Route::get('/cities', [CityController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/fields/{city_id}', [FieldController::class, 'index']);
@@ -64,8 +58,4 @@ Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 Route::get('/cities/seeks/{city_id}', [SeekController::class, 'index']);
 Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
 Route::get('/availabilities/{field_id}', [AvailabilityController::class, 'show']);
-// Route::get('/cities/games/{city_id}', [GameController::class, 'index']);
-// Route::get('/games/{game_id}', [GameController::class, 'show']);
-// Route::get('/cities/championships/{city_id}', [ChampionshipController::class, 'index']);
-// Route::get('/championships/{championship_id}', [ChampionshipController::class, 'show']);
 // Route::get('/users/{user_id}', [UserController::class, 'show']);
