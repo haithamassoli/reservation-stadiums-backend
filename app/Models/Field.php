@@ -21,6 +21,7 @@ class Field extends Model
         'status',
         'order',
         'tags',
+        'hours_type',
     ];
 
     public function city()

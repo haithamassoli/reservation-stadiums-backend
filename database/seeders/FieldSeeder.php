@@ -68,6 +68,7 @@ class FieldSeeder extends Seeder
             'status' => 'active',
             'order' => 1,
             'tags' => "5x5, 7x7, 11x11",
+            'hours_type' => '1h, 1.5h, 2h',
         ]);
         Field::create([
             'user_id' => 1,
@@ -83,6 +84,7 @@ class FieldSeeder extends Seeder
             'min_price' => 50,
             'status' => 'active',
             'tags' => "5x5, 7x7, 11x11",
+            'hours_type' => '1h, 1.5h, 2h',
         ]);
         Field::create([
             'user_id' => 1,
@@ -99,6 +101,7 @@ class FieldSeeder extends Seeder
             'status' => 'active',
             'order' => 10,
             'tags' => "5x5, 7x7, 11x11",
+            'hours_type' => '1h, 1.5h, 2h',
         ]);
         Field::create([
             'user_id' => 1,

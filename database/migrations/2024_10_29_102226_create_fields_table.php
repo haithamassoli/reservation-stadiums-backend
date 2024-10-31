@@ -28,7 +28,7 @@ return new class extends Migration
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->integer('order')->default(0);
             $table->text('tags')->nullable();
-            $table->index('tags');
+            $table->string('hours_type')->nullable();
         });
     }
 
