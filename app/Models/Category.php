@@ -14,6 +14,6 @@ class Category extends Model
 
     public function fields()
     {
-        return $this->belongsToMany(Field::class);
+        return $this->hasMany(Field::class);
     }
 }

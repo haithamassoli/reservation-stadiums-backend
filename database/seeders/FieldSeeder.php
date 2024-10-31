@@ -15,6 +15,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -29,6 +30,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -42,6 +44,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -56,6 +59,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -70,6 +74,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -83,6 +88,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -96,6 +102,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -109,6 +116,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -122,6 +130,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -135,6 +144,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -148,6 +158,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -161,6 +172,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -174,6 +186,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -187,6 +200,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -200,6 +214,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -213,6 +228,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -226,6 +242,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -239,6 +256,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -252,6 +270,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -265,6 +284,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -278,6 +298,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -291,6 +312,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -304,6 +326,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -317,6 +340,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
@@ -330,6 +354,7 @@ class FieldSeeder extends Seeder
         Field::create([
             'user_id' => 1,
             'city_id' => 1,
+            'category_id' => 1,
             'name' => 'ملعب عمان الدولي',
             'address' => 'عمان، العبدلي',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',

@@ -14,7 +14,6 @@ class BookingSeeder extends Seeder
     {
         Booking::create([
             'user_id' => 1,
-            'field_id' => 1,
             'field_size_id' => 1,
             'date' => '2021-10-10',
             'start' => '10:00',
@@ -27,7 +26,6 @@ class BookingSeeder extends Seeder
         ]);
         Booking::create([
             'user_id' => 1,
-            'field_id' => 1,
             'field_size_id' => 1,
             'date' => '2021-10-10',
             'start' => '10:00',

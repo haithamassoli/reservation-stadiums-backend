@@ -8,7 +8,7 @@ class FieldSize extends Model
 {
     protected $fillable = [
         'size',
-        'category_field_id',
+        'field_id',
         'price_per_hour',
         'discount',
         'expires_at',
@@ -18,11 +18,6 @@ class FieldSize extends Model
     public function field()
     {
         return $this->belongsTo(Field::class);
-    }
-
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
     }
 
     public function bookings()

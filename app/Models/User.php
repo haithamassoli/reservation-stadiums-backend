@@ -44,7 +44,7 @@ class User extends Authenticatable
 
     public function fields()
     {
-        return $this->hasOne(Field::class);
+        return $this->hasMany(Field::class);
     }
 
     public function reviews()

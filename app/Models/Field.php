@@ -9,6 +9,7 @@ class Field extends Model
     protected $fillable = [
         'user_id',
         'city_id',
+        'category_id',
         'name',
         'address',
         'location',
@@ -26,9 +27,9 @@ class Field extends Model
         return $this->belongsTo(City::class);
     }
 
-    public function categories()
+    public function category()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function user()
@@ -44,11 +45,6 @@ class Field extends Model
     public function reviews()
     {
         return $this->hasMany(Review::class);
-    }
-
-    public function bookings()
-    {
-        return $this->hasMany(Booking::class);
     }
 
     public function seeks()

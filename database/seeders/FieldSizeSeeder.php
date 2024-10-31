@@ -14,19 +14,19 @@ class FieldSizeSeeder extends Seeder
     {
         FieldSize::create([
             'size' => '5x5',
-            'category_field_id' => 1,
+            'field_id' => 1,
             'price_per_hour' => 10,
             'discount' => 10,
             'expires_at' => now()->addDays(7),
         ]);
         FieldSize::create([
             'size' => '7x7',
-            'category_field_id' => 1,
+            'field_id' => 1,
             'price_per_hour' => 10,
         ]);
         FieldSize::create([
             'size' => '11x11',
-            'category_field_id' => 1,
+            'field_id' => 1,
             'price_per_hour' => 10,
         ]);
     }
