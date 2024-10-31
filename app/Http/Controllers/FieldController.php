@@ -11,10 +11,45 @@ class FieldController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($city_id)
+    public function index(Request $request, $city_id)
     {
-        $field = DB::table('fields')->where('city_id', $city_id)->simplePaginate(10);
-        return response()->json($field);
+        //   #requestUri: "/api/cities/fields/1?category=1&tags=7x7&price=asc&hours=2h&rating=desc"
+
+        if (count($request->query()) > 0) {
+
+            $query = Field::query();
+
+            // Filter by category
+            if ($request->has('category')) {
+                $query->where('category_id', $request->category);
+            }
+
+            // Filter by tags
+            if ($request->has('tags')) {
+                $query->where('tags', 'like', '%' . $request->tags . '%');
+            }
+
+            //  Sort by price
+            if ($request->has('price')) {
+                $query->orderBy('min_price', 'asc');
+            }
+
+            // Sort by rating
+            if ($request->has('rating')) {
+                $query->orderBy('rating', 'desc');
+            }
+
+            // Filter by hours availability
+            if ($request->has('hours')) {
+                $query->where('hours_type', 'like', '%' . $request->hours . '%');
+            }
+
+            // return $query->get();
+            return response()->json($query->where('city_id', $city_id)->simplePaginate(10));
+        } else {
+            $field = DB::table('fields')->where('city_id', $city_id)->simplePaginate(10);
+            return response()->json($field);
+        }
     }
 
     /**
