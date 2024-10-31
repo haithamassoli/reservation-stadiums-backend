@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ReviewSeeder::class,
             AcademySeeder::class,
             SeekSeeder::class,
+            AvailabilitySeeder::class,
         ]);
 
         // User::factory()->create([

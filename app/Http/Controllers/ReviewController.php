@@ -13,10 +13,7 @@ class ReviewController extends Controller
      */
     public function index($field_id)
     {
-        $reviews = DB::table('reviews')
-            ->where('field_id', $field_id)
-            ->get();
-
+        $reviews = DB::table('reviews')->where('field_id', $field_id)->simplePaginate(10);
         return response()->json($reviews);
     }
 
