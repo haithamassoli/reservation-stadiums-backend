@@ -36,7 +36,6 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::middleware('auth:sanctum')
   ->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::get('/fields/{field_id}/bookings', [BookingController::class, 'fieldBookings']);
     Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
     Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
   });
@@ -58,4 +57,5 @@ Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 Route::get('/cities/seeks/{city_id}', [SeekController::class, 'index']);
 Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
 Route::get('/availabilities/{field_id}', [AvailabilityController::class, 'show']);
-// Route::get('/users/{user_id}', [UserController::class, 'show']);
+Route::get('bookings/fields/{field_id}/field-size/{field_size_id}', [BookingController::class, 'fieldBookings']);
+  // Route::get('/users/{user_id}', [UserController::class, 'show']);

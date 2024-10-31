@@ -21,6 +21,11 @@ class Booking extends Model
         'payment_method'
     ];
 
+    public function field()
+    {
+        return $this->belongsTo(Field::class);
+    }
+
     public function fieldSize()
     {
         return $this->belongsTo(FieldSize::class);

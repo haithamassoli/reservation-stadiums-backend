@@ -18,9 +18,9 @@ class BookingController extends Controller
     }
 
     // all field_id bookings
-    public function fieldBookings($field_id)
+    public function fieldBookings($field_id, $field_size_id)
     {
-        $bookings = DB::table('bookings')->where('field_id', $field_id)->get();
+        $bookings = DB::table('bookings')->where('field_id', $field_id)->where('field_size_id', $field_size_id)->get();
         return response()->json($bookings);
     }
 
