@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('availabilities', function (Blueprint $table) {
+        Schema::create('special_availabilities', function (Blueprint $table) {
             $table->id();
             $table->foreignId('field_size_id')->constrained()->onDelete('cascade');
-            //(day_of_week BETWEEN 0 AND 6), -- 0 = Sunday, 6 = Saturday
-            $table->tinyInteger('day_of_week')->unsigned();
-            $table->time('open_time');
-            $table->time('close_time');
+            $table->date('special_date');
+            $table->time('start_time')->nullable();
+            $table->time('end_time')->nullable();
             $table->boolean('is_closed')->default(false);
             $table->timestamps();
         });
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('availabilities');
+        Schema::dropIfExists('special_availabilities');
     }
 };

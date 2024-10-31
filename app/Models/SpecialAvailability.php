@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Availability extends Model
+class SpecialAvailability extends Model
 {
     protected $fillable = [
         'field_size_id',
-        'day_of_week',
-        'open_time',
-        'close_time',
+        'special_date',
+        'start_time',
+        'end_time',
         'is_closed',
     ];
 

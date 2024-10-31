@@ -24,4 +24,14 @@ class FieldSize extends Model
     {
         return $this->hasMany(Booking::class);
     }
+
+    public function availabilities()
+    {
+        return $this->hasMany(Availability::class);
+    }
+
+    public function specialAvailabilities()
+    {
+        return $this->hasMany(SpecialAvailability::class);
+    }
 }

@@ -13,49 +13,49 @@ class AvailabilitySeeder extends Seeder
     public function run(): void
     {
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 0,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 1,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 2,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 3,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 4,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 5,
             'open_time' => '08:00',
             'close_time' => '22:00',
             'is_closed' => false,
         ]);
         Availability::create([
-            'field_id' => 1,
+            'field_size_id' => 1,
             'day_of_week' => 6,
             'open_time' => '08:00',
             'close_time' => '22:00',

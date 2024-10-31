@@ -51,9 +51,4 @@ class Field extends Model
     {
         return $this->hasMany(Seek::class);
     }
-
-    public function availabilities()
-    {
-        return $this->hasMany(Availability::class);
-    }
 }

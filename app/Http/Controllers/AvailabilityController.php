@@ -19,9 +19,15 @@ class AvailabilityController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($field_id)
+    public function show($field_id, $field_size_id)
     {
-        $availabilities = DB::table('availabilities')->where('field_id', $field_id)->get();
+        // availabilities inner join field_sizes on field_sizes.id = availabilities.field_size_id
+        $availabilities = DB::table('availabilities')
+            ->join('field_sizes', 'field_sizes.id', '=', 'availabilities.field_size_id')
+            ->select('availabilities.*')
+            ->where('field_sizes.field_id', $field_id)
+            ->where('field_sizes.id', $field_size_id)
+            ->get();
         return response()->json($availabilities);
     }
 
