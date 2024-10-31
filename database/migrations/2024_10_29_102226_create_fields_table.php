@@ -29,6 +29,7 @@ return new class extends Migration
             $table->integer('order')->default(0);
             $table->text('tags')->nullable();
             $table->string('hours_type')->nullable();
+            $table->enum('payment_method', ['cash', 'card', 'paypal'])->default('cash');
         });
     }
 

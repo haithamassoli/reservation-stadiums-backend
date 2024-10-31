@@ -37,7 +37,7 @@ class BookingSeeder extends Seeder
             'cancellation_time' => null,
             'notes' => 'This is a test booking',
             'discount' => 10,
-            'payment_method' => 'card',
+            'payment_method' => 'cash',
         ]);
     }
 }
