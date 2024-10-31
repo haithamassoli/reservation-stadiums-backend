@@ -20,6 +20,7 @@ class Field extends Model
         'min_price',
         'status',
         'order',
+        'tags',
     ];
 
     public function city()

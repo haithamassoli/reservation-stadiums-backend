@@ -27,6 +27,8 @@ return new class extends Migration
             $table->integer('min_price')->default(0);
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->integer('order')->default(0);
+            $table->text('tags')->nullable();
+            $table->index('tags');
         });
     }
 
