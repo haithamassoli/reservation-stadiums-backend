@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('discount')->nullable();
             $table->text('terms');
-            $table->float('rating')->default(0);
+            $table->string('rating')->default('0,0');
             $table->json('images');
             $table->integer('min_price')->default(0);
             $table->enum('status', ['active', 'inactive'])->default('active');
