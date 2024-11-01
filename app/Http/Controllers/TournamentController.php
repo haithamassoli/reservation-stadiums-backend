@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Tournament;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class TournamentController extends Controller
 {
@@ -22,7 +23,34 @@ class TournamentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'city_id' => 'required',
+            'title' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+            'discount' => 'required',
+            'discount_type' => 'required',
+            'image' => 'required',
+            'phone' => 'required',
+            'period' => 'required',
+            'category' => 'required',
+            'location' => 'required',
+            'address' => 'required',
+            'expire_at' => 'required',
+            'age' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()], 401);
+        }
+
+        $tournament = Tournament::create($request->all());
+        return response()->json([
+            'message' => 'Tournament created successfully',
+            'data' => $tournament
+        ], 200);
     }
 
     /**

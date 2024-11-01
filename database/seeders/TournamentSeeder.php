@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Tournament;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class TournamentSeeder extends Seeder
@@ -14,7 +13,7 @@ class TournamentSeeder extends Seeder
     public function run(): void
     {
         Tournament::create([
-            'name' => 'Tournament 1',
+            'title' => 'Tournament 1',
             'description' => 'Description 1',
             'period' => '2024-10-30 03:03:16',
             'status' => 'active',
@@ -28,7 +27,7 @@ class TournamentSeeder extends Seeder
             'city_id' => 1,
         ]);
         Tournament::create([
-            'name' => 'Tournament 2',
+            'title' => 'Tournament 2',
             'description' => 'Description 2',
             'period' => '2024-10-30 03:03:16',
             'status' => 'active',
@@ -42,7 +41,7 @@ class TournamentSeeder extends Seeder
             'city_id' => 1,
         ]);
         Tournament::create([
-            'name' => 'Tournament 3',
+            'title' => 'Tournament 3',
             'description' => 'Description 3',
             'period' => '2024-10-30 03:03:16',
             'status' => 'active',
