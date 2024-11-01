@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Field;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class FieldController extends Controller
 {
@@ -57,7 +59,34 @@ class FieldController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validator = Validator::make($request->all(), [
+            'city_id' => 'required',
+            'category_id' => 'required',
+            'name' => 'required',
+            'address' => 'required',
+            'location' => 'required',
+            'terms' => 'required',
+            'images' => 'required',
+            'discount' => 'nullable',
+            'order' => 'required',
+            'tags' => 'required',
+            'hours_type' => 'required',
+            'payment_method' => 'nullable',
+            'enclosures' => 'nullable',
+        ]);
+
+        $request['user_id'] = Auth::id();
+
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()], 401);
+        }
+
+        $field = Field::create($request->all());
+        return response()->json([
+            'message' => 'Field created successfully',
+            'data' => $field
+        ], 200);
     }
 
     /**

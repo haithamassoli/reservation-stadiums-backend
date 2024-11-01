@@ -48,6 +48,7 @@ Route::middleware('auth:sanctum')->group(function () {
 // Admin routes
 Route::middleware('auth:sanctum', IsAdmin::class)->group(function () {
   Route::post('/tournaments', [TournamentController::class, 'store']);
+  Route::post('/fields', [FieldController::class, 'store']);
 });
 
 // Public routes
