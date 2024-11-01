@@ -19,7 +19,12 @@ class SeekSeeder extends Seeder
             'title' => 'Seek 1',
             'description' => 'Description 1',
             'status' => 'active',
-            'expires_at' => now()->addDays(7),
+            'expire_at' => now()->addDays(7),
+            'phone' => '123456789',
+            'period' => 'full-time',
+            'category' => 'category',
+            'age' => '18-30',
+
         ]);
         Seek::create([
             'city_id' => 1,
@@ -28,7 +33,11 @@ class SeekSeeder extends Seeder
             'title' => 'Seek 2',
             'description' => 'Description 2',
             'status' => 'active',
-            'expires_at' => now()->addDays(7),
+            'expire_at' => now()->addDays(7),
+            'phone' => '123456789',
+            'period' => 'full-time',
+            'category' => 'category',
+            'age' => '18-30',
         ]);
         Seek::create([
             'city_id' => 1,
@@ -37,7 +46,11 @@ class SeekSeeder extends Seeder
             'title' => 'Seek 3',
             'description' => 'Description 3',
             'status' => 'active',
-            'expires_at' => now()->addDays(7),
+            'expire_at' => now()->addDays(7),
+            'phone' => '123456789',
+            'period' => 'full-time',
+            'category' => 'category',
+            'age' => '18-30',
         ]);
     }
 }

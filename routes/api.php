@@ -41,6 +41,7 @@ Route::middleware('auth:sanctum')->group(function () {
   Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
   Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
   Route::post('/bookings', [BookingController::class, 'store']);
+  Route::post('/seeks', [SeekController::class, 'store']);
 });
 
 // Admin routes

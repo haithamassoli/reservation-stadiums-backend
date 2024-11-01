@@ -19,7 +19,11 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->enum('status', ['active', 'inactive'])->default('active');
-            $table->timestamp('expires_at')->nullable();
+            $table->string('phone');
+            $table->string('period');
+            $table->string('category');
+            $table->string('age');
+            $table->dateTime('expire_at');
             $table->timestamps();
         });
     }

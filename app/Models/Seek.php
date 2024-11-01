@@ -13,7 +13,11 @@ class Seek extends Model
         'title',
         'description',
         'status',
-        'expires_at',
+        'expire_at',
+        'phone',
+        'period',
+        'category',
+        'age'
     ];
 
     public function city()

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Seek;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class SeekController extends Controller
 {
@@ -22,7 +23,34 @@ class SeekController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'city_id' => 'required',
+            'user_id' => 'required',
+            'field_id' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'price' => 'required',
+            'image' => 'required',
+            'phone' => 'required',
+            'period' => 'required',
+            'category' => 'required',
+            'location' => 'required',
+            'address' => 'required',
+            'expire_at' => 'required',
+            'age' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()], 401);
+        }
+
+        $seek = Seek::create($request->all());
+        return response()->json([
+            'message' => 'Seek created successfully',
+            'data' => $seek
+        ], 200);
     }
 
     /**
