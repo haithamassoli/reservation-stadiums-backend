@@ -38,7 +38,7 @@ Route::middleware('guest:sanctum')->group(function () {
 //User routes
 Route::middleware('auth:sanctum')->group(function () {
   Route::post('/logout', [AuthController::class, 'logout']);
-  Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
+  Route::get('/user/bookings', [BookingController::class, 'index']);
   Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
   Route::post('/bookings', [BookingController::class, 'store']);
   Route::post('/seeks', [SeekController::class, 'store']);

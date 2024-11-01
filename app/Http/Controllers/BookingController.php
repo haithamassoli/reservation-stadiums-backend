@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
@@ -12,9 +13,9 @@ class BookingController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($user_id)
+    public function index()
     {
-        $bookings = DB::table('bookings')->where('user_id', $user_id)->get();
+        $bookings = DB::table('bookings')->where('user_id', Auth::id())->simplePaginate(10);
         return response()->json($bookings);
     }
 
@@ -48,7 +49,6 @@ class BookingController extends Controller
         }
 
         $validator = Validator::make($request->all(), [
-            'user_id' => 'required',
             'field_id' => 'required',
             'field_size_id' => 'required',
             'start_time' => 'required',
@@ -60,6 +60,7 @@ class BookingController extends Controller
 
         $request['total_price'] = $price;
         $request['discount'] = $discount_text;
+        $request['user_id'] = Auth::id();
 
         if ($validator->fails()) {
             return response()->json([
@@ -79,7 +80,7 @@ class BookingController extends Controller
      */
     public function show($booking_id)
     {
-        $booking = DB::table('bookings')->where('id', $booking_id)->first();
+        $booking = DB::table('bookings')->where('id', $booking_id)->where('user_id', Auth::id())->first();
         return response()->json($booking);
     }
 

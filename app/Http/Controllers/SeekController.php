@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Seek;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
@@ -25,7 +26,6 @@ class SeekController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'city_id' => 'required',
-            'user_id' => 'required',
             'field_id' => 'required',
             'title' => 'required',
             'description' => 'required',
@@ -41,6 +41,8 @@ class SeekController extends Controller
             'expire_at' => 'required',
             'age' => 'required'
         ]);
+
+        $request['user_id'] = Auth::id();
 
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 401);
