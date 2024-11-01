@@ -9,17 +9,9 @@ use Illuminate\Support\Facades\DB;
 class AvailabilityController extends Controller
 {
     /**
-     * Store a newly created resource in storage.
+     * Display a listing of the resource.
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show($field_id, $field_size_id)
+    public function index($field_id, $field_size_id)
     {
         // availabilities inner join field_sizes on field_sizes.id = availabilities.field_size_id
         $availabilities = DB::table('availabilities')
@@ -29,6 +21,14 @@ class AvailabilityController extends Controller
             ->where('field_sizes.id', $field_size_id)
             ->get();
         return response()->json($availabilities);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
     }
 
     /**

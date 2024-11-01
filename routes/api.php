@@ -42,6 +42,7 @@ Route::middleware('auth:sanctum')->group(function () {
   Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
   Route::post('/bookings', [BookingController::class, 'store']);
   Route::post('/seeks', [SeekController::class, 'store']);
+  Route::post('/fields/{field_id}/reviews', [ReviewController::class, 'store']);
 });
 
 // Admin routes
@@ -56,15 +57,15 @@ Route::get('/cities', [CityController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/{city_id}/fields', [FieldController::class, 'index']);
 Route::get('/fields/{field_id}', [FieldController::class, 'show']);
-Route::get('/fields/sizes/{field_id}', [FieldSizeController::class, 'index']);
+Route::get('/fields/{field_id}/sizes', [FieldSizeController::class, 'index']);
 Route::get('/advertisements', [AdvertisementController::class, 'index']);
 Route::get('/cities/{city_id}/tournaments', [TournamentController::class, 'index']);
 Route::get('/tournaments/{tournament_id}', [TournamentController::class, 'show']);
-Route::get('/reviews/{field_id}', [ReviewController::class, 'index']);
+Route::get('/fields/{field_id}/reviews', [ReviewController::class, 'index']);
 Route::get('/cities/{city_id}/academies', [AcademyController::class, 'index']);
 Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 Route::get('/cities/{city_id}/seeks', [SeekController::class, 'index']);
 Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
-Route::get('/availabilities/{field_id}', [AvailabilityController::class, 'show']);
-Route::get('bookings/fields/{field_id}/field-size/{field_size_id}', [BookingController::class, 'fieldBookings']);
+Route::get('/fields/{field_id}/field-size/{field_size_id}/availabilities/', [AvailabilityController::class, 'index']);
+Route::get('fields/{field_id}/field-size/{field_size_id}/bookings', [BookingController::class, 'fieldBookings']);
   // Route::get('/users/{user_id}', [UserController::class, 'show']);
