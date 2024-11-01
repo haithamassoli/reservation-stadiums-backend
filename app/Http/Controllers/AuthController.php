@@ -89,4 +89,11 @@ class AuthController extends Controller
       'message' => 'User not authenticated.'
     ], 401);
   }
+
+  public function authenticated()
+  {
+    return response()->json([
+      'message' => 'User is authenticated.'
+    ]);
+  }
 }

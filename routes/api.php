@@ -51,7 +51,7 @@ Route::middleware('auth:sanctum', IsAdmin::class)->group(function () {
 
 // Public routes
 Route::get('/not-authenticated', [AuthController::class, 'notAuthenticated'])->name('login');
-Route::get('/not-authenticated', [AuthController::class, 'notAuthenticated'])->name('home');
+Route::get('/authenticated', [AuthController::class, 'authenticated'])->name('home');
 Route::get('/cities', [CityController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/{city_id}/fields', [FieldController::class, 'index']);
