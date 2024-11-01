@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreignId('field_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->date('date');
-            $table->time('start');
-            $table->time('end');
+            $table->time('start_time');
+            $table->time('end_time');
             $table->integer('total_price');
             $table->enum('status', ['pending', 'approved', 'rejected', 'cancelled'])->default('pending');
             $table->dateTime('cancellation_time')->nullable();

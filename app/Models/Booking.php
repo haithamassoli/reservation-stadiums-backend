@@ -8,10 +8,11 @@ class Booking extends Model
 {
     protected $fillable = [
         'user_id',
+        'field_id',
         'field_size_id',
         'date',
-        'start',
-        'end',
+        'start_time',
+        'end_time',
         'status',
         'total_price',
         'cancellation_time',
