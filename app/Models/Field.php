@@ -22,7 +22,8 @@ class Field extends Model
         'order',
         'tags',
         'hours_type',
-        'payment_method'
+        'payment_method',
+        'enclosures'
     ];
 
     public function city()

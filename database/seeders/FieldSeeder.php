@@ -69,6 +69,7 @@ class FieldSeeder extends Seeder
             'order' => 1,
             'tags' => "5x5, 7x7, 11x11",
             'hours_type' => '1h, 1.5h, 2h',
+            'enclosures' => 'parking, changing rooms, showers',
         ]);
         Field::create([
             'user_id' => 1,
@@ -85,6 +86,7 @@ class FieldSeeder extends Seeder
             'status' => 'active',
             'tags' => "5x5, 7x7, 11x11",
             'hours_type' => '1h, 1.5h, 2h',
+            'enclosures' => 'parking, changing rooms, showers',
         ]);
         Field::create([
             'user_id' => 1,
