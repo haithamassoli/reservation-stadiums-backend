@@ -25,6 +25,8 @@ class TournamentSeeder extends Seeder
             'address' => 'address 1',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
             'city_id' => 1,
+            'field_id' => 1,
+            'user_id' => 1,
         ]);
         Tournament::create([
             'title' => 'Tournament 2',
@@ -39,6 +41,8 @@ class TournamentSeeder extends Seeder
             'address' => 'address 1',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
             'city_id' => 1,
+            'field_id' => 1,
+            'user_id' => 1,
         ]);
         Tournament::create([
             'title' => 'Tournament 3',
@@ -53,6 +57,8 @@ class TournamentSeeder extends Seeder
             'address' => 'address 1',
             'location' => 'https://maps.app.goo.gl/c8g8dRoytEP7WNfM6',
             'city_id' => 1,
+            'field_id' => 1,
+            'user_id' => 1,
         ]);
     }
 }

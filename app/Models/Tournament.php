@@ -19,10 +19,22 @@ class Tournament extends Model
         'address',
         'location',
         'city_id',
+        'field_id',
+        'user_id',
     ];
 
     public function city()
     {
         return $this->belongsTo(City::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function field()
+    {
+        return $this->belongsTo(Field::class);
     }
 }
