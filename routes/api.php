@@ -38,6 +38,7 @@ Route::middleware('auth:sanctum')
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
     Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
+    Route::post('/bookings', [BookingController::class, 'store']);
   });
 
 

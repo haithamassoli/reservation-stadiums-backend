@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class BookingController extends Controller
 {
@@ -29,7 +30,45 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $field_size = DB::table('field_sizes')->where('id', $request->field_size_id)->first();
+
+        $price = $field_size->price_per_hour;
+        $discount_text = '';
+
+        if ($field_size->discount) {
+            $discount_type = $field_size->discount_type;
+            $discount = $field_size->discount;
+            if ($discount_type == 'percentage') {
+                $price -= ($price * $discount / 100);
+                $discount_text = $discount . '%';
+            } else {
+                $price -= $discount;
+                $discount_text = $discount . '$';
+            }
+        }
+
+        $validator = Validator::make($request->all(), [
+            'user_id' => 'required',
+            'field_id' => 'required',
+            'field_size_id' => 'required',
+            'start_time' => 'required',
+            'end_time' => 'required',
+            'date' => 'required',
+            'notes' => 'nullable',
+            'payment_method' => 'nullable',
+        ]);
+
+        $request['total_price'] = $price;
+        $request['discount'] = $discount_text;
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => $validator->errors()
+            ], 400);
+        }
+
+        $booking = Booking::create($request->all());
+        return response()->json($booking);
     }
 
     /**

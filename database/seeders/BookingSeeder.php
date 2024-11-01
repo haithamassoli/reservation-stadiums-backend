@@ -19,7 +19,7 @@ class BookingSeeder extends Seeder
             'date' => '2021-10-10',
             'start_time' => '10:00',
             'end_time' => '12:00',
-            'status' => 'pending',
+            'status' => 'cancelled',
             'total_price' => 20,
             'cancellation_time' => null,
             'cancellation_fee' => 10,
@@ -32,11 +32,11 @@ class BookingSeeder extends Seeder
             'date' => '2021-10-10',
             'start_time' => '10:00',
             'end_time' => '12:00',
-            'status' => 'pending',
+            'status' => 'success',
             'total_price' => 20,
             'cancellation_time' => null,
             'notes' => 'This is a test booking',
-            'discount' => 10,
+            'discount' => "10%",
             'payment_method' => 'cash',
         ]);
     }

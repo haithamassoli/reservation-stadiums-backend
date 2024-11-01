@@ -20,11 +20,11 @@ return new class extends Migration
             $table->time('start_time');
             $table->time('end_time');
             $table->integer('total_price');
-            $table->enum('status', ['pending', 'approved', 'rejected', 'cancelled'])->default('pending');
+            $table->enum('status', ['success', 'cancelled'])->default('success');
             $table->dateTime('cancellation_time')->nullable();
             $table->decimal('cancellation_fee', 5, 2)->default(0);
             $table->text('notes')->nullable();
-            $table->integer('discount')->default(0);
+            $table->string('discount')->nullable();
             $table->enum('payment_method', ['cash', 'card', 'paypal'])->default('cash');
             $table->timestamps();
         });
