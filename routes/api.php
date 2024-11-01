@@ -12,11 +12,14 @@ use App\Http\Controllers\FieldSizeController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SeekController;
 use App\Http\Controllers\TournamentController;
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
 
 //Authentication routes
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/register', [AuthController::class, 'register']);
+Route::middleware('guest:sanctum')->group(function () {
+  Route::post('/login', [AuthController::class, 'login']);
+  Route::post('/register', [AuthController::class, 'register']);
+});
 
 // Route::prefix('email')
 //     ->controller(VerifyEmailController::class)
@@ -33,17 +36,21 @@ Route::post('/register', [AuthController::class, 'register']);
 //     });
 
 //User routes
-Route::middleware('auth:sanctum')
-  ->group(function () {
-    Route::post('/logout', [AuthController::class, 'logout']);
-    Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
-    Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
-    Route::post('/bookings', [BookingController::class, 'store']);
-  });
+Route::middleware('auth:sanctum')->group(function () {
+  Route::post('/logout', [AuthController::class, 'logout']);
+  Route::get('/users/{user_id}/bookings', [BookingController::class, 'index']);
+  Route::get('/bookings/{booking_id}', [BookingController::class, 'show']);
+  Route::post('/bookings', [BookingController::class, 'store']);
+});
 
+// Admin routes
+Route::middleware('auth:sanctum', IsAdmin::class)->group(function () {
+  Route::post('/tournaments', [TournamentController::class, 'store']);
+});
 
 // Public routes
 Route::get('/not-authenticated', [AuthController::class, 'notAuthenticated'])->name('login');
+Route::get('/not-authenticated', [AuthController::class, 'notAuthenticated'])->name('home');
 Route::get('/cities', [CityController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cities/{city_id}/fields', [FieldController::class, 'index']);
