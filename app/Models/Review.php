@@ -10,7 +10,6 @@ class Review extends Model
         'field_id',
         'user_id',
         'name',
-        'review',
         'rating',
     ];
 

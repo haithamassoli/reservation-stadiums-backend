@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('field_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('name');
-            $table->text('review');
             $table->integer('rating');
             $table->timestamps();
         });
