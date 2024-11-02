@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('field_size_id')->constrained()->onDelete('cascade');
             $table->date('special_date');
-            $table->time('start_time')->nullable();
-            $table->time('end_time')->nullable();
+            $table->time('open_time')->nullable();
+            $table->time('close_time')->nullable();
             $table->boolean('is_closed')->default(false);
             $table->timestamps();
         });

@@ -11,6 +11,7 @@ use App\Http\Controllers\FieldController;
 use App\Http\Controllers\FieldSizeController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SeekController;
+use App\Http\Controllers\SpecialAvailabilityController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,7 @@ Route::middleware('auth:sanctum', IsAdmin::class)->group(function () {
   Route::post('/fields', [FieldController::class, 'store']);
   Route::post('/fields/{field_id}/field-sizes', [FieldSizeController::class, 'store']);
   Route::post('/fields/{field_id}/field-sizes/{field_size_id}/availabilities', [AvailabilityController::class, 'store']);
+  Route::post('/fields/{field_id}/field-sizes/{field_size_id}/special-availabilities', [SpecialAvailabilityController::class, 'store']);
 });
 
 // Public routes

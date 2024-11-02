@@ -9,8 +9,8 @@ class SpecialAvailability extends Model
     protected $fillable = [
         'field_size_id',
         'special_date',
-        'start_time',
-        'end_time',
+        'open_time',
+        'close_time',
         'is_closed',
     ];
 
