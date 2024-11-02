@@ -28,15 +28,14 @@ class ReviewController extends Controller
     {
         $field = DB::table('fields')->select("rating")->where('id', $field_id)->first();
         $validator = Validator::make($request->all(), [
-            'name' => 'required',
             'rating' => 'required|numeric',
         ]);
 
         // $field->rating = 2.5,10
         $rating = explode(',', $field->rating);
         $avg_rating = (floatval($rating[0]) * intval($rating[1]) + intval($request->rating)) / (intval($rating[1]) + 1) . ',' . (intval($rating[1]) + 1);
-
         $request['field_id'] = $field_id;
+        $request['name'] = Auth::user()->name;
         $request['user_id'] = Auth::id();
 
         if ($validator->fails()) {
