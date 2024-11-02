@@ -50,6 +50,7 @@ Route::middleware('auth:sanctum', IsAdmin::class)->group(function () {
   Route::post('/tournaments', [TournamentController::class, 'store']);
   Route::post('/fields', [FieldController::class, 'store']);
   Route::post('/fields/{field_id}/field-sizes', [FieldSizeController::class, 'store']);
+  Route::post('/fields/{field_id}/field-sizes/{field_size_id}/availabilities', [AvailabilityController::class, 'store']);
 });
 
 // Public routes
@@ -68,6 +69,6 @@ Route::get('/cities/{city_id}/academies', [AcademyController::class, 'index']);
 Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 Route::get('/cities/{city_id}/seeks', [SeekController::class, 'index']);
 Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
-Route::get('/fields/{field_id}/field-size/{field_size_id}/availabilities/', [AvailabilityController::class, 'index']);
-Route::get('fields/{field_id}/field-size/{field_size_id}/bookings', [BookingController::class, 'fieldBookings']);
+Route::get('/fields/{field_id}/field-sizes/{field_size_id}/availabilities', [AvailabilityController::class, 'index']);
+Route::get('fields/{field_id}/field-sizes/{field_size_id}/bookings', [BookingController::class, 'fieldBookings']);
   // Route::get('/users/{user_id}', [UserController::class, 'show']);
