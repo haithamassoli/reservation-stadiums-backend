@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder
             AcademySeeder::class,
             SeekSeeder::class,
             AvailabilitySeeder::class,
+            SpecialAvailabilitySeeder::class,
         ]);
 
         // User::factory()->create([

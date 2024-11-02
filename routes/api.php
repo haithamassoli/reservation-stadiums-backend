@@ -72,5 +72,6 @@ Route::get('/academies/{academy_id}', [AcademyController::class, 'show']);
 Route::get('/cities/{city_id}/seeks', [SeekController::class, 'index']);
 Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
 Route::get('/fields/{field_id}/field-sizes/{field_size_id}/availabilities', [AvailabilityController::class, 'index']);
+Route::get('/fields/{field_id}/field-sizes/{field_size_id}/special-availabilities', [SpecialAvailabilityController::class, 'index']);
 Route::get('fields/{field_id}/field-sizes/{field_size_id}/bookings', [BookingController::class, 'fieldBookings']);
   // Route::get('/users/{user_id}', [UserController::class, 'show']);

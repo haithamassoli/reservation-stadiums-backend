@@ -13,17 +13,15 @@ class SpecialAvailabilityController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($field_id, $field_size_id)
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        $special_availabilities = DB::table('special_availabilities')
+            ->join('field_sizes', 'field_sizes.id', '=', 'special_availabilities.field_size_id')
+            ->select('special_availabilities.*')
+            ->where('field_sizes.field_id', $field_id)
+            ->where('field_sizes.id', $field_size_id)
+            ->get();
+        return response()->json($special_availabilities);
     }
 
     /**

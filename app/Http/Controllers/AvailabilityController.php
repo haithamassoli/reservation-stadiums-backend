@@ -15,7 +15,6 @@ class AvailabilityController extends Controller
      */
     public function index($field_id, $field_size_id)
     {
-        // availabilities inner join field_sizes on field_sizes.id = availabilities.field_size_id
         $availabilities = DB::table('availabilities')
             ->join('field_sizes', 'field_sizes.id', '=', 'availabilities.field_size_id')
             ->select('availabilities.*')
