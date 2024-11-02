@@ -13,6 +13,7 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SeekController;
 use App\Http\Controllers\SpecialAvailabilityController;
 use App\Http\Controllers\TournamentController;
+use App\Http\Controllers\FileUploadController;
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
 
@@ -74,4 +75,6 @@ Route::get('/seeks/{seek_id}', [SeekController::class, 'show']);
 Route::get('/fields/{field_id}/field-sizes/{field_size_id}/availabilities', [AvailabilityController::class, 'index']);
 Route::get('/fields/{field_id}/field-sizes/{field_size_id}/special-availabilities', [SpecialAvailabilityController::class, 'index']);
 Route::get('fields/{field_id}/field-sizes/{field_size_id}/bookings', [BookingController::class, 'fieldBookings']);
+Route::post('upload-images', [FileUploadController::class, 'uploadImages']);
+Route::post('upload-image', [FileUploadController::class, 'uploadImage']);
   // Route::get('/users/{user_id}', [UserController::class, 'show']);
