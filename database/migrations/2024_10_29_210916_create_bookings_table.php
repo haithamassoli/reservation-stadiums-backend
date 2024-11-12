@@ -24,6 +24,7 @@ return new class extends Migration
             $table->dateTime('cancellation_time')->nullable();
             $table->decimal('cancellation_fee', 5, 2)->default(0);
             $table->text('notes')->nullable();
+            $table->string('field_name');
             $table->string('discount')->nullable();
             $table->enum('payment_method', ['cash', 'card', 'paypal'])->default('cash');
             $table->timestamps();

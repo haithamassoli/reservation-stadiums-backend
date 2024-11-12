@@ -24,6 +24,7 @@ class BookingSeeder extends Seeder
             'cancellation_time' => null,
             'cancellation_fee' => 10,
             'notes' => 'This is a test booking',
+            'field_name' => 'Field 1 - Small',
         ]);
         Booking::create([
             'user_id' => 1,
@@ -38,6 +39,7 @@ class BookingSeeder extends Seeder
             'notes' => 'This is a test booking',
             'discount' => "10%",
             'payment_method' => 'cash',
+            'field_name' => 'Field 2 - 5x5',
         ]);
     }
 }

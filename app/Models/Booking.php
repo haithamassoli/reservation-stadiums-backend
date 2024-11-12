@@ -19,7 +19,8 @@ class Booking extends Model
         'cancellation_fee',
         'notes',
         'discount',
-        'payment_method'
+        'payment_method',
+        'field_name',
     ];
 
     public function field()
