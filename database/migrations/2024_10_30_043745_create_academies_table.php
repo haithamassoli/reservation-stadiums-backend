@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->json('images');
+            $table->string('main_image');
             $table->string('phone');
             $table->string('period');
             $table->integer('price');

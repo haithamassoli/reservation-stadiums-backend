@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('terms');
             $table->string('rating')->default('0,0');
             $table->json('images');
+            $table->string('main_image');
             $table->integer('min_price')->default(0);
             $table->enum('status', ['active', 'inactive'])->default('inactive');
             $table->integer('order')->default(0);

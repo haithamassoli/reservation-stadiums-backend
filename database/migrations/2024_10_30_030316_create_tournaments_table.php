@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('period');
             $table->enum('status', ['active', 'inactive'])->default('active');
-            $table->json('images');
+            $table->string('image');
             $table->string('phone');
             $table->string('category');
             $table->string('age');

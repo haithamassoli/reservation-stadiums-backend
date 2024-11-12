@@ -16,6 +16,7 @@ class Field extends Model
         'terms',
         "rating",
         'images',
+        'main_image',
         'discount',
         'min_price',
         'status',

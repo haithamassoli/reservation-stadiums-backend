@@ -12,6 +12,7 @@ class Academy extends Model
         'address',
         'location',
         'images',
+        'main_image',
         'price',
         'status',
         'description',

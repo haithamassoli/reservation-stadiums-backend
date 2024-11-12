@@ -68,6 +68,7 @@ class FieldController extends Controller
             'location' => 'required',
             'terms' => 'required',
             'images' => 'required',
+            'main_image' => 'required',
             'discount' => 'nullable',
             'order' => 'required',
             'tags' => 'required',

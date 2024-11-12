@@ -11,7 +11,7 @@ class Tournament extends Model
         'description',
         'period',
         'status',
-        'images',
+        'image',
         'phone',
         'category',
         'age',
