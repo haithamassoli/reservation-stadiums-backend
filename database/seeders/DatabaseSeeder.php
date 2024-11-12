@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
         User::factory()
             ->create([
                 'name' => 'Admin',
@@ -22,6 +21,7 @@ class DatabaseSeeder extends Seeder
                 'role' => UserRole::ADMIN,
                 'email_verified_at' => now(),
             ]);
+        User::factory(10)->create();
 
         $this->call([
             CitySeeder::class,
