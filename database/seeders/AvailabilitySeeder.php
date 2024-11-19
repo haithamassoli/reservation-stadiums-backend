@@ -15,51 +15,65 @@ class AvailabilitySeeder extends Seeder
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 0,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 1,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 2,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 3,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 4,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 5,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
         Availability::create([
             'field_size_id' => 1,
             'day_of_week' => 6,
-            'open_time' => '08:00',
-            'close_time' => '22:00',
             'is_closed' => false,
+            'times' => json_encode([
+                ['start' => '16:00', 'end' => '24:00'],
+                ['start' => '00:00', 'end' => '03:00'],
+            ]),
         ]);
     }
 }

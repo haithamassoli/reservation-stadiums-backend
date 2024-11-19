@@ -9,8 +9,7 @@ class Availability extends Model
     protected $fillable = [
         'field_size_id',
         'day_of_week',
-        'open_time',
-        'close_time',
+        'times',
         'is_closed',
     ];
 

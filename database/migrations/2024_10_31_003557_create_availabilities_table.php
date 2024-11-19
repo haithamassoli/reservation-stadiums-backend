@@ -16,8 +16,7 @@ return new class extends Migration
             $table->foreignId('field_size_id')->constrained()->onDelete('cascade');
             //(day_of_week BETWEEN 0 AND 6), -- 0 = Sunday, 6 = Saturday
             $table->tinyInteger('day_of_week')->unsigned();
-            $table->time('open_time');
-            $table->time('close_time');
+            $table->json('times');
             $table->boolean('is_closed')->default(false);
             $table->timestamps();
         });
