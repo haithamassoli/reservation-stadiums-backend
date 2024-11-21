@@ -12,7 +12,7 @@ class Booking extends Model
         'field_size_id',
         'date',
         'start_time',
-        'end_time',
+        'duration',
         'status',
         'total_price',
         'cancellation_time',

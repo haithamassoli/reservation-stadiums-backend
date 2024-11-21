@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->date('date');
             $table->time('start_time');
-            $table->time('end_time');
+            $table->float('duration');
             $table->integer('total_price');
             $table->enum('status', ['success', 'cancelled'])->default('success');
             $table->dateTime('cancellation_time')->nullable();
