@@ -29,5 +29,22 @@ class FieldSizeSeeder extends Seeder
             'field_id' => 1,
             'price_per_hour' => 10,
         ]);
+        FieldSize::create([
+            'size' => '7x7',
+            'field_id' => 2,
+            'price_per_hour' => 10,
+            'discount' => 10,
+            'expires_at' => now()->addDays(7),
+        ]);
+        FieldSize::create([
+            'size' => '8x8',
+            'field_id' => 2,
+            'price_per_hour' => 10,
+        ]);
+        FieldSize::create([
+            'size' => '6x6',
+            'field_id' => 3,
+            'price_per_hour' => 10,
+        ]);
     }
 }

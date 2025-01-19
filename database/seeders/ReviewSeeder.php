@@ -19,14 +19,14 @@ class ReviewSeeder extends Seeder
             'rating' => 5,
         ]);
         Review::create([
-            'field_id' => 1,
-            'user_id' => 2,
+            'field_id' => 2,
+            'user_id' => 1,
             'name' => 'Hashem Doe',
             'rating' => 2,
         ]);
         Review::create([
-            'field_id' => 1,
-            'user_id' => 3,
+            'field_id' => 3,
+            'user_id' => 1,
             'name' => 'Haitham Assoli',
             'rating' => 4,
         ]);
