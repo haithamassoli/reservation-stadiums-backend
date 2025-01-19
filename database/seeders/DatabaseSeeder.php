@@ -16,12 +16,10 @@ class DatabaseSeeder extends Seeder
         User::factory()
             ->create([
                 'name' => 'Admin',
-                'email' => 'admin@admin.com',
-                'password' => bcrypt(UserRole::ADMIN),
                 'role' => UserRole::ADMIN,
-                'email_verified_at' => now(),
+                'phone' => '0775331416',
+                'uuid' => 'a5d1672b-fe1a-418a-bfe9-ce93cbcc74cf'
             ]);
-        User::factory(10)->create();
 
         $this->call([
             CitySeeder::class,

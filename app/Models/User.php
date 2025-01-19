@@ -20,23 +20,13 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
-        'password',
         'phone',
         'violations',
         'role',
+        'uuid',
     ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
+    
+    public $timestamps = false;
 
     public function bookings()
     {
@@ -56,19 +46,6 @@ class User extends Authenticatable
     public function seeks()
     {
         return $this->hasMany(Seek::class);
-    }
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
     }
 
     public function hasRole(string $role): bool
