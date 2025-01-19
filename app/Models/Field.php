@@ -24,7 +24,8 @@ class Field extends Model
         'tags',
         'hours_type',
         'payment_method',
-        'enclosures'
+        'enclosures',
+        'sports',
     ];
 
     public function city()

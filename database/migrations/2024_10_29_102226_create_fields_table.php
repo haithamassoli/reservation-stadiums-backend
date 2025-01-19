@@ -29,9 +29,10 @@ return new class extends Migration
             $table->enum('status', ['active', 'inactive'])->default('inactive');
             $table->integer('order')->default(0);
             $table->text('tags')->nullable();
-            $table->string('hours_type')->nullable();
+            $table->json('hours_type');
             $table->enum('payment_method', ['cash', 'card', 'paypal'])->default('cash');
             $table->string('enclosures')->nullable();
+            $table->string('sports');
         });
     }
 
